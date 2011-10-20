@@ -1,4 +1,4 @@
-mongo_version("1.8.1")
+mongo_version("2.0.0")
 mongo_name("mongodb-linux-#{@attribute["kernel"]["machine"]}-static-legacy-#{@attribute["mongo_version"]}")
 mongo_path("/opt/mongodb-linux-#{@attribute["kernel"]["machine"]}-static-legacy-#{@attribute["mongo_version"]}")
 mongo_base("/data/mongodb")
