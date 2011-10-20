@@ -87,3 +87,4 @@
 
 # Added by makuchaku
 require_recipe "mongodb"
+#require_recipe "nodejs"  ==> EY has 0.5.6-pre already installed in /opt/node
