@@ -46,7 +46,7 @@ mongodb_options = { :exec => "#{@node[:mongo_path]}/bin/mongod",
                     :log_path => mongo_log,
                     :user => user[:username],
                     :pid_path => "/var/run/mongodb",
-                    :ip => "0.0.0.0",
+                    :ip => "127.0.0.1",
                     :port => @node[:mongo_port],
                     :extra_opts => [] }
 if @node[:mongo_journaling]
