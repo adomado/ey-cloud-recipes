@@ -5,9 +5,9 @@
 
 # Setup an arbiter on the db_master|solo as replica sets need another vote to properly failover.  If you have a Replica set > 3 nodes we don't set this up, you can tune this obviously.
 case node[:kernel][:machine]
-#when "i686"
+when "i686"
   # Do nothing, you should never run MongoDB in a i686/i386 environment it will damage your data.
-else
+#else
   if (['db_master','solo'].include?(@node[:instance_role]) &&  @node[:mongo_utility_instances].length < 3)
     require_recipe "mongodb::install"
     require_recipe "mongodb::configure"
