@@ -83,3 +83,7 @@
   # postgresql9_pg_freespacemap "postgres"
   
 #end
+
+
+# Added by makuchaku
+require_recipe "mongodb"
